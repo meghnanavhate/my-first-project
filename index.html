@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cambridge International School - Home</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .top-bar {
+      background-color: #5a5a5a;
+      color: #f5d142;
+      padding: 8px 20px;
+      font-size: 14px;
+    }
+
+    .header-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      background-color: #c09c29;
+      padding: 10px;
+    }
+
+    .header-buttons button {
+      background-color: #f5d142;
+      border: none;
+      padding: 10px 15px;
+      font-size: 14px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #fff;
+      padding: 15px 30px;
+      border-bottom: 1px solid #ddd;
+      position: relative;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      position: relative;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #444;
+      font-weight: bold;
+      padding: 8px 12px;
+      position: relative;
+    }
+
+    .nav-links a:hover {
+      color: #c09c29;
+    }
+
+    /* Dropdown */
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 40px;
+      left: 0;
+      background-color: #fff;
+      min-width: 200px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      z-index: 999;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 10px;
+      color: #444;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f2f2f2;
+      color: #c09c29;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .hero {
+      width: 100%;
+      height: 400px;
+      background: url('images/CB.jpg') no-repeat center center/cover;
+    }
+
+
+    .values {
+      display: flex;
+      justify-content: space-around;
+      background-color: #333;
+      color: #fff;
+      padding: 30px 0;
+      text-align: center;
+    }
+
+    .values div {
+      width: 30%;
+    }
+
+    .values h3 {
+      color: #f5d142;
+      margin-bottom: 10px;
+    }
+
+    .contact-section {
+      background-color: #f2f2f2;
+      padding: 30px;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .contact-box {
+      width: 300px;
+      margin-bottom: 20px;
+    }
+
+    .contact-box h3 {
+      color: #c09c29;
+      margin-bottom: 15px;
+    }
+
+    .contact-box p,
+    .contact-box a {
+      color: #333;
+      text-decoration: none;
+      margin: 5px 0;
+      display: block;
+    }
+
+    .bottom-bar {
+      background-color: #414681;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+
+    .privacy {
+      padding: 10px;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    .privacy a {
+      color: #e91e63;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">Cambridge International School</div>
+
+<style>
+.top-bar {
+    background-color: #004080;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;  /* This centers the text */
+}
+</style>
+
+  <!-- Update & Admission Enquiry Buttons -->
+  <div class="header-buttons">
+    <button onclick="window.location.href='update.html'">🔔 Updates</button>
+    <button onclick="window.location.href='enquiry.html'">📩 Admission Enquiry</button>
+  </div>
+
+  <!-- Navigation Bar with Dropdowns -->
+  <nav>
+    <div class="logo">
+      <img src="images\logo.png" alt="Logo" width="80">
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+
+      <div class="dropdown">
+        <a href="about.html">About Us</a>
+        <div class="dropdown-content">
+          <a href="#">Vision & Values</a>
+          <a href="#">Principal’s Message</a>
+          <a href="#">Leadership</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <a href="thecisway.html">The CIS Way</a>
+        <div class="dropdown-content">
+          <a href="#">Academic Life</a>
+          <a href="#">Beyond Classroom</a>
+          <a href="#">Facilities</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <a href="programs.html">Programs</a>
+        <div class="dropdown-content">
+          <a href="#">Kindergarten</a>
+          <a href="#">Primary School</a>
+          <a href="#">Secondary School</a>
+        </div>
+      </div>
+
+      
+      <a href="community.html">Community</a>
+      
+
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </nav>
+
+  <!-- Hero Image / Slider -->
+  <div class="hero"></div>
+
+  <!-- Values Section -->
+  <div class="values">
+    <div>
+      <h3>HUMILITY</h3>
+      <p>We value humility in every step of learning.</p>
+    </div>
+    <div>
+      <h3>RESILIENCE</h3>
+      <p>Building strong, resilient students ready for life.</p>
+    </div>
+    <div>
+      <h3>KINDNESS</h3>
+      <p>Kindness is the core of our community culture.</p>
+    </div>
+  </div>
+
+  <!-- Footer Contact Section -->
+  <div class="contact-section">
+    <div class="contact-box">
+      <h3>CAMBRIDGE INTERNATIONAL SCHOOL</h3>
+      <p>🕒 Mon – Sun open</p>
+      <p>✉️ <a href="mailto:ciswaghholipune@gmail.com">ciswaghholipune@gmail.com</a></p>
+      <p>📞 <a href="tel:+919503050888">+91 9503050888</a></p>
+    </div>
+
+    <div class="contact-box">
+      <h3>SOCIAL LINKS</h3>
+      <p>📷 <a href="#">Instagram</a></p>
+
+      <h3>QUICK LINKS</h3>
+      <p>🎒 <a href="#">Kindergarten</a></p>
+      <p>🏫 <a href="#">Primary</a></p>
+    </div>
+
+    <div class="contact-box">
+      <h3>Cambridge International School</h3>
+      <p>Bakori Road, Wagholi Pune,</p>
+      <p>Maharashtra 412207 India</p>
+    </div>
+  </div>
+
+  <!-- Privacy & Footer -->
+  <div class="privacy">
+    <a href="privacy.html">Privacy</a> |
+    <a href="#">Instagram</a> |
+    <a href="#">Login</a>
+  </div>
+
+  <div class="bottom-bar">
+    © 2025–2026 Cambridge International School, All Rights Reserved.
+  </div>
+
+</body>
+
+</html>
