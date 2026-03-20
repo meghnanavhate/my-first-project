@@ -1,0 +1,11 @@
+
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+.top-bar { background: #333; color: #fff; padding: 10px; text-align: center; }
+nav ul { background: #444; padding: 10px; list-style: none; margin: 0; display: flex; }
+nav ul li { position: relative; }
+nav ul li a { color: white; padding: 10px; display: block; text-decoration: none; }
+nav ul li:hover { background: #555; }
+nav ul li .dropdown { display: none; position: absolute; top: 40px; background: #666; list-style: none; padding: 0; }
+nav ul li:hover .dropdown { display: block; }
+main { padding: 20px; }
+footer { background: #333; color: #fff; text-align: center; padding: 10px; margin-top: 20px; }

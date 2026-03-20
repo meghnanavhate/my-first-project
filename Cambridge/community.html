@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community - Cambridge International School</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .top-bar {
+      background-color: #5a5a5a;
+      color: #f5d142;
+      padding: 8px 20px;
+      font-size: 14px;
+    }
+
+    .header-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      background-color: #c09c29;
+      padding: 10px;
+    }
+
+    .header-buttons button {
+      background-color: #f5d142;
+      border: none;
+      padding: 10px 15px;
+      font-size: 14px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #fff;
+      padding: 15px 30px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      position: relative;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #444;
+      font-weight: bold;
+      padding: 8px 12px;
+    }
+
+    .nav-links a:hover {
+      color: #c09c29;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 40px;
+      left: 0;
+      background-color: #fff;
+      min-width: 200px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      z-index: 999;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 10px;
+      color: #444;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f2f2f2;
+      color: #c09c29;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .hero {
+      width: 100%;
+      height: 400px;
+      background: url('images/CB.jpg') no-repeat center center/cover;
+    }
+
+    .content-section {
+      padding: 40px;
+      line-height: 1.7;
+      color: #333;
+    }
+
+    .content-section h2 {
+      color: #c09c29;
+      margin-bottom: 20px;
+    }
+
+    .community-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px 40px;
+    }
+
+    .community-item {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      background-color: #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .community-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .community-item h3 {
+      padding: 15px;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .bottom-bar {
+      background-color: #414681;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+
+    .privacy {
+      padding: 10px;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    .privacy a {
+      color: #e91e63;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="top-bar">Cambridge International School</div>
+  <style>
+    .top-bar {
+        background-color: #004080;
+        color: #fff;
+        padding: 10px 0;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;  /* This centers the text */
+    }
+    </style>
+
+  <div class="header-buttons">
+    <button onclick="window.location.href='update.html'">🔔 Updates</button>
+    <button onclick="window.location.href='enquiry.html'">📩 Admission Enquiry</button>
+  </div>
+
+  <nav>
+    <div class="logo">
+      <img src="images/logo.png" alt="Logo" width="80">
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+
+      <div class="dropdown">
+        <a href="about.html">About Us</a>
+        <div class="dropdown-content">
+          <a href="about.html#vision">Vision & Values</a>
+          <a href="about.html#principal">Principal’s Message</a>
+          <a href="about.html#leadership">Leadership</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <a href="thecisway.html">The CIS Way</a>
+        <div class="dropdown-content">
+          <a href="thecisway.html#academic">Academic Life</a>
+          <a href="thecisway.html#beyond">Beyond the Classroom</a>
+          <a href="thecisway.html#facilities">Facilities</a>
+        </div>
+      </div>
+
+      
+      <a href="programs.html">Programs</a>
+    
+
+      <a href="community.html">Community</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </nav>
+
+  <div class="hero"></div>
+
+  <div class="content-section">
+    <h2>Our Community</h2>
+    <p>Our community includes a vast network of our alumni, parents, and students across cities. Since its inception, our community has grown leaps and bounds. Our ninth addition to the St Lawrence group is CIS, Wagholi, Pune.</p>
+  </div>
+
+  <div class="community-grid">
+    <div class="community-item">
+      <img src="images\Cambridge-School-Chh-Sambhajinagar-1536x1024-1.jpg" alt="Cambridge School Chh. Sambhajinagar">
+      <h3>Cambridge School, Chh. Sambhajinagar</h3>
+    </div>
+    <div class="community-item">
+      <img src="images\Cambridge-International-School-Nashik-scaled-1536x1024-1.jpg" alt="Cambridge International School Nashik">
+      <h3>Cambridge International School, Nashik</h3>
+    </div>
+    <div class="community-item">
+      <img src="images\Cambridge-International-School-Pune-scaled-1536x1024-1.jpg" alt="Cambridge International School Pune">
+      <h3>Cambridge International School, Pune</h3>
+    </div>
+    <div class="community-item">
+      <img src="images\cambridge-School-Mangluru-scaled-1536x1024-1.jpg" alt="Cambridge School Mangluru">
+      <h3>Cambridge School, Mangluru</h3>
+    </div>
+    <div class="community-item">
+      <img src="images\St.-Xaviers-School-Bengaluru-scaled-1536x1024-1.jpg" alt="St. Xavier's School Bengaluru">
+      <h3>St. Xavier's School, Bengaluru</h3>
+    </div>
+    <div class="community-item">
+      <img src="images\St.-Peters-School-Bengaluru-1-scaled-1536x1024-1.jpg" alt="St. Peter's School Bengaluru">
+      <h3>St. Peter's School, Bengaluru</h3>
+    </div>
+    <div class="community-item">
+      <img src="images\ST.-LAWRENCE-HIGH-SCHOOL-CHH.-SAMBHAJINAGAR-scaled-1536x1024-1.jpg" alt="ST. LAWRENCE HIGH SCHOOL, CHH. SAMBHAJINAGAR">
+      <h3>ST. LAWRENCE HIGH SCHOOL, Chh. Sambhajinagar</h3>
+    </div>
+    <div class="community-item">
+      <img src="images\ST.-LAWRENCE-HIGH-SCHOOL-Jalgaon-scaled-1536x1024-1.jpg" alt="ST. LAWRENCE HIGH SCHOOL, Jalgaon">
+      <h3>ST. LAWRENCE HIGH SCHOOL, Jalgaon</h3>
+    </div>
+  </div>
+
+  <div class="privacy">
+    <a href="privacy.html">Privacy</a> |
+    <a href="#">Instagram</a> |
+    <a href="#">Login</a>
+  </div>
+
+  <div class="bottom-bar">
+    © 2025–2026 Cambridge International School, All Rights Reserved.
+  </div>
+
+</body>
+
+</html>

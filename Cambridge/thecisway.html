@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The CIS Way - Cambridge International School</title>
+  <style>
+    /* Reusing same CSS style as index.html */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .top-bar {
+      background-color: #5a5a5a;
+      color: #f5d142;
+      padding: 8px 20px;
+      font-size: 14px;
+    }
+    .header-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      background-color: #c09c29;
+      padding: 10px;
+    }
+    .header-buttons button {
+      background-color: #f5d142;
+      border: none;
+      padding: 10px 15px;
+      font-size: 14px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #fff;
+      padding: 15px 30px;
+      border-bottom: 1px solid #ddd;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      position: relative;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: #444;
+      font-weight: bold;
+      padding: 8px 12px;
+    }
+    .nav-links a:hover {
+      color: #c09c29;
+    }
+    .dropdown {
+      position: relative;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 40px;
+      left: 0;
+      background-color: #fff;
+      min-width: 200px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      z-index: 999;
+    }
+    .dropdown-content a {
+      display: block;
+      padding: 10px;
+      color: #444;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .dropdown-content a:hover {
+      background-color: #f2f2f2;
+      color: #c09c29;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .hero {
+      width: 100%;
+      height: 400px;
+      background: url('images/CB.jpg') no-repeat center center/cover;
+    }
+    .content-section {
+      padding: 40px;
+      line-height: 1.7;
+      color: #333;
+    }
+    .content-section h2 {
+      color: #c09c29;
+      margin-bottom: 20px;
+    }
+    .bottom-bar {
+      background-color: #414681;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+    .privacy {
+      padding: 10px;
+      text-align: center;
+      font-size: 13px;
+    }
+    .privacy a {
+      color: #e91e63;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="top-bar">Cambridge International School</div>
+  <style>
+    .top-bar {
+        background-color: #004080;
+        color: #fff;
+        padding: 10px 0;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;  /* This centers the text */
+    }
+    </style>
+
+  <div class="header-buttons">
+    <button onclick="window.location.href='update.html'">🔔 Updates</button>
+    <button onclick="window.location.href='enquiry.html'">📩 Admission Enquiry</button>
+  </div>
+
+  <nav>
+    <div class="logo">
+      <img src="images/logo.png" alt="Logo" width="80">
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+
+      <div class="dropdown">
+        <a href="about.html">About Us</a>
+        <div class="dropdown-content">
+          <a href="about.html#vision">Vision & Values</a>
+          <a href="about.html#principal">Principal’s Message</a>
+          <a href="about.html#leadership">Leadership</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <a href="thecisway.html">The CIS Way</a>
+        <div class="dropdown-content">
+          <a href="thecisway.html#academic">Academic Life</a>
+          <a href="thecisway.html#beyond">Beyond the Classroom</a>
+          <a href="thecisway.html#facilities">Facilities</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <a href="programs.html">Programs</a>
+        <div class="dropdown-content">
+          <a href="#">Kindergarten</a>
+          <a href="#">Primary School</a>
+          <a href="#">Secondary School</a>
+        </div>
+      </div>
+
+      
+      <a href="community.html">Community</a>
+       
+
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </nav>
+
+  <div class="hero"></div>
+
+  <div class="content-section" id="academic">
+    <h2>Academic Life at CIS</h2>
+    <p>Scholarship and hard work are promoted at Cambridge International School. Learning is enjoyable, competitive, and collaborative. We give importance to examination success but also promote progress over perfection.</p>
+    <p>Through constant support and guidance, our children succeed in every academic subject, finding new interests and passions as they go along. From learning to hold a pencil to writing long stories, our pupils are taught to strive for better.</p>
+    <p>Alongside our pupils, our teachers and non-teaching staff make our family complete. We believe that every person plays a role in our school, and we are grateful for everyone’s dedication.</p>
+  </div>
+
+  <div class="content-section" id="beyond">
+    <h2>Beyond the Classroom</h2>
+    <p>We lay emphasis on activities outside the classroom just as much as inside. We offer a range of activities and clubs for our children. Whether our students’ interests include sport, drama, dance, art, or music – we have a spot for everyone.</p>
+    <p>We promote an active lifestyle for our students with sports and physical activity given dedicated time every day. We also have various in-house competitions to inculcate sportsmanship into our ethos.</p>
+  </div>
+
+  <div class="content-section" id="facilities">
+    <h2>Facilities</h2>
+    <p>One of our biggest advantages is our love for the best. Our campuses have been at the heart of every achievement we make. From our classrooms to our grounds - we only do what’s best for our students.</p>
+    <p>Years of experience in building extraordinary infrastructure has led to the CIS design. From lush lawns to bright and airy classrooms, we believe a place where the child spends the most time apart from home is school. We want them to love their new school and so make sure that their needs are looked after.</p>
+    <p>From the best sporting infrastructure to state-of-the-art laboratories - we have a place for each talent. Our smart boards and focus on technology help our students prepare for the future. We have spacious auditoriums and activity centres. As the school grows, so do we; expanding and updating our schools every year.</p>
+  </div>
+
+  <div class="privacy">
+    <a href="privacy.html">Privacy</a> |
+    <a href="#">Instagram</a> |
+    <a href="#">Login</a>
+  </div>
+
+  <div class="bottom-bar">
+    © 2025–2026 Cambridge International School, All Rights Reserved.
+  </div>
+
+</body>
+
+</html>

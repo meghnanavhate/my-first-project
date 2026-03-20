@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admission Enquiry - Cambridge International School</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+    }
+
+    .top-bar {
+      background-color: #004080;
+      color: #fff;
+      padding: 10px 0;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .header-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      background-color: #c09c29;
+      padding: 10px;
+    }
+
+    .header-buttons button {
+      background-color: #f5d142;
+      border: none;
+      padding: 10px 15px;
+      font-size: 14px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #fff;
+      padding: 15px 30px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #444;
+      font-weight: bold;
+      padding: 8px 12px;
+    }
+
+    .nav-links a:hover {
+      color: #c09c29;
+    }
+
+    .content-section {
+      padding: 30px;
+      background-color: #fff;
+      color: #333;
+      line-height: 1.7;
+      max-width: 900px;
+      margin: 0 auto;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+
+    .content-section h2 {
+      color: #c09c29;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    label {
+      font-weight: bold;
+      color: #004080;
+    }
+
+    input, select, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+      width: 100%;
+    }
+
+    textarea {
+      resize: vertical;
+      height: 100px;
+    }
+
+    button.submit-btn {
+      background-color: #c09c29;
+      color: #fff;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button.submit-btn:hover {
+      background-color: #a17e24;
+    }
+
+    .contact-section {
+      background-color: #f2f2f2;
+      padding: 30px;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .contact-box {
+      width: 300px;
+      margin-bottom: 20px;
+    }
+
+    .contact-box h3 {
+      color: #c09c29;
+      margin-bottom: 15px;
+    }
+
+    .contact-box p,
+    .contact-box a {
+      color: #333;
+      text-decoration: none;
+      margin: 5px 0;
+      display: block;
+    }
+
+    .bottom-bar {
+      background-color: #414681;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+
+    .privacy {
+      padding: 10px;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    .privacy a {
+      color: #e91e63;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="top-bar">Cambridge International School</div>
+
+  <div class="header-buttons">
+    <button onclick="window.location.href='update.html'">🔔 Updates</button>
+    <button onclick="window.location.href='enquiry.html'">📩 Admission Enquiry</button>
+  </div>
+
+  <nav>
+    <div class="logo">
+      <img src="images/logo.png" alt="Logo" width="80">
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="thecisway.html">The CIS Way</a>
+      <a href="programs.html">Programs</a>
+      <a href="community.html">Community</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </nav>
+
+  <div class="content-section">
+    <h2>Admission Enquiry Form</h2>
+
+    <form action="submit_enquiry.php" method="post">
+
+      <label for="parent-name">Parent's Full Name:</label>
+      <input type="text" id="parent-name" name="parent_name" placeholder="Enter your full name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+      <label for="child-name">Child's Full Name:</label>
+      <input type="text" id="child-name" name="child_name" placeholder="Enter your child's full name" required>
+
+      <label for="grade">Grade Seeking Admission for:</label>
+      <select id="grade" name="grade" required>
+        <option value="">Select Grade</option>
+        <option value="Nursery">Nursery</option>
+        <option value="Jr KG">Junior KG</option>
+        <option value="Sr KG">Senior KG</option>
+        <option value="Grade 1">Grade 1</option>
+        <option value="Grade 2">Grade 2</option>
+        <option value="Grade 3">Grade 3</option>
+        <option value="Grade 4">Grade 4</option>
+        <option value="Grade 5">Grade 5</option>
+        <option value="Grade 6">Grade 6</option>
+        <option value="Grade 7">Grade 7</option>
+        <option value="Grade 8">Grade 8</option>
+      </select>
+
+      <label for="message">Additional Message (Optional):</label>
+      <textarea id="message" name="message" placeholder="Write your message here..."></textarea>
+
+      <button type="submit" class="submit-btn">Submit Enquiry</button>
+    </form>
+  </div>
+
+  <div class="contact-section">
+    <div class="contact-box">
+      <h3>CAMBRIDGE INTERNATIONAL SCHOOL</h3>
+      <p>🕒 Mon – Sun open</p>
+      <p>✉️ <a href="mailto:ciswaghholipune@gmail.com">ciswaghholipune@gmail.com</a></p>
+      <p>📞 <a href="tel:+919503050888">+91 9503050888</a></p>
+    </div>
+
+    <div class="contact-box">
+      <h3>SOCIAL LINKS</h3>
+      <p>📷 <a href="#">Instagram</a></p>
+
+      <h3>QUICK LINKS</h3>
+      <p>🎒 <a href="#">Kindergarten</a></p>
+      <p>🏫 <a href="#">Primary</a></p>
+    </div>
+
+    <div class="contact-box">
+      <h3>Cambridge International School</h3>
+      <p>Bakori Road, Wagholi Pune,</p>
+      <p>Maharashtra 412207 India</p>
+    </div>
+  </div>
+
+  <div class="privacy">
+    <a href="privacy.html">Privacy</a> |
+    <a href="#">Instagram</a> |
+    <a href="#">Login</a>
+  </div>
+
+  <div class="bottom-bar">
+    © 2025–2026 Cambridge International School, All Rights Reserved.
+  </div>
+<script>
+  document.querySelector("form").addEventListener("submit", function(e) {
+    const phone = document.getElementById("phone").value;
+    if (!/^\d{10}$/.test(phone)) {
+      alert("Please enter a valid 10-digit phone number.");
+      e.preventDefault();
+    }
+  });
+</script>
+
+</body>
+
+</html>
