@@ -1,7 +1,7 @@
 # Cambridge Website Project
 
 ## Description
-This project is a simple website created using HTML and CsS.
+This project is a simple website created using HTML and CSS.
 
 ## Features
 -Responsive design
